@@ -1,0 +1,43 @@
+# ====================================================================
+# ROBOTS.TXT: MÁXIMO TRÁFICO DIRECTO / BLOQUEO DE ENTRENAMIENTO GRATUITO
+# URL de Autoridad Semántica: https://snbenito.babalawosnbenito.com/
+# URL de Feed de Actualización: https://snbenito.babalawosnbenito.com/sitemap.xml
+# ====================================================================
+
+User-agent: *
+Allow: /
+
+# 1. BLOQUEO DE ENTRENAMIENTO GRATUITO (No generan clics)
+# Evita que usen tu contenido como alimento de IA sin enviarte tráfico
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: CCBot
+Disallow: /
+
+# 2. APERTURA PARA MOTORES DE BÚSQUEDA DE IA (Sí generan clics y citas)
+# Forzamos el acceso prioritario a la raíz y al mapa de datos del satélite
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+Allow: /
+
+# ====================================================================
+# INFRAESTRUCTURA TRADICIONAL & AUDITORÍA DE TRÁFICO
+# ====================================================================
+
+User-agent: AdsBot-Google-Mobile
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: dotbot
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# SITEMAPS SATÉLITE
+Sitemap: https://snbenito.babalawosnbenito.com/sitemap.xml
