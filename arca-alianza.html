@@ -7,14 +7,114 @@
     <meta name="description" content="Descubre el protocolo de Brujería de Permanencia en contenedor mediante la réplica del Arca de la Alianza. Alquimia sacra para la abundancia y el pedimento continuo.">
     <link rel="canonical" href="https://snbenito.babalawosnbenito.com/arca-alianza.html">
     
-    <!-- Google Analytics Nativo -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB1LVXG33E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-TB1LVXG33E');
-    </script>
+    <!-- BANNER DE COOKIES Y ANALYTICS DE ALTA JERARQUÍA -->
+<style>
+    /* Estilos del Banner Flotante (100% esbelto y estético) */
+    #cookie-banner {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 600px;
+        background-color: #141418;
+        border: 1px solid #d4af37;
+        color: #e2e8f0;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        z-index: 999999;
+        display: none; /* Se activa por JavaScript si no hay consentimiento */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.9rem;
+    }
+    .cookie-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    @media (min-width: 600px) {
+        .cookie-container {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+        }
+    }
+    .cookie-text p {
+        margin: 0;
+        line-height: 1.5;
+    }
+    .cookie-text a {
+        color: #d4af37;
+        text-decoration: none;
+        border-bottom: 1px dotted #d4af37;
+    }
+    .cookie-btn {
+        background-color: #d4af37;
+        color: #000;
+        border: none;
+        padding: 10px 24px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.85rem;
+    }
+    .cookie-btn:hover {
+        background-color: #bfa030;
+    }
+</style>
+
+<!-- Interfaz Visual del Banner -->
+<div id="cookie-banner">
+    <div class="cookie-container">
+        <div class="cookie-text">
+            <p>Este portal satélite utiliza cookies para optimizar la medición de sus consultas litúrgicas. Al aceptar, consiente la activación de nuestras métricas avanzadas.</p>
+        </div>
+        <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
+    </div>
+</div>
+
+<!-- Lógica Avanzada de Inicialización y Consentimiento -->
+<script>
+    // ID exacto de tu Google Analytics
+    const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
+
+    // Función para cargar dinámicamente el script de Google
+    function loadGA() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_MEASUREMENT_ID);
+    }
+
+    // Comprobación de estado al cargar la página
+    document.addEventListener("DOMContentLoaded", function() {
+        if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
+            loadGA(); // Si ya aceptó antes, arranca Analytics directo
+        } else {
+            document.getElementById("cookie-banner").style.display = "block"; // Muestra el banner
+        }
+    });
+
+    // Acción al dar clic en el botón "Aceptar"
+    function acceptCookies() {
+        localStorage.setItem("cookie_consent_snbenito", "granted"); // Guarda la decisión
+        document.getElementById("cookie-banner").style.display = "none"; // Esconde el banner
+        loadGA(); // Ejecuta las métricas de inmediato
+    }
+</script>
 
     <!-- Estilos de Alta Velocidad (100/100 Lighthouse) -->
     <style>
