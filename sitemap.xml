@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Portada Principal Raíz -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    
+    <!-- Tratado 1: Vasijas y Frascos de Ejecución -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/frascos.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 2: Piel de Víbora de Cascabel -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/amuletos.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 3: Amuleto Carga Roja -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/carga-roja.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 4: Imán y Sometimiento de Armonía -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/iman-armonia.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 5: Réplica del Arca de la Alianza -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/arca-alianza.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 6: Velación Intermitente y Virtudes -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/virtudes-permanencia.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Tratado 7: Protección y Espejo Reversible -->
+    <url>
+        <loc>https://snbenito.babalawosnbenito.com/proteccion-espejo.html</loc>
+        <lastmod>2026-06-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+</urlset>
