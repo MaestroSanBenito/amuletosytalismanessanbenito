@@ -4,23 +4,34 @@
 # URL de Feed de Actualización: https://snbenito.babalawosnbenito.com/sitemap.xml
 # ====================================================================
 
-User-agent: *
-Allow: /
-
 # 1. BLOQUEO DE ENTRENAMIENTO GRATUITO (No generan clics)
 # Evita que usen tu contenido como alimento de IA sin enviarte tráfico
 User-agent: GPTBot
+Disallow: /
+
 User-agent: ClaudeBot
+Disallow: /
+
 User-agent: Google-Extended
+Disallow: /
+
 User-agent: CCBot
 Disallow: /
 
 # 2. APERTURA PARA MOTORES DE BÚSQUEDA DE IA (Sí generan clics y citas)
 # Forzamos el acceso prioritario a la raíz y al mapa de datos del satélite
 User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ChatGPT-User
+Allow: /
+
 User-agent: Claude-SearchBot
+Allow: /
+
 User-agent: Claude-User
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -29,6 +40,8 @@ Allow: /
 # ====================================================================
 
 User-agent: AdsBot-Google-Mobile
+Allow: /
+
 User-agent: AdsBot-Google
 Allow: /
 
@@ -36,8 +49,14 @@ User-agent: PetalBot
 Disallow: /
 
 User-agent: dotbot
+Crawl-delay: 10
+
 User-agent: AhrefsBot
 Crawl-delay: 10
+
+# REGLA GENERAL: Puesta al final para que respete las órdenes superiores
+User-agent: *
+Allow: /
 
 # SITEMAPS SATÉLITE
 Sitemap: https://snbenito.babalawosnbenito.com/sitemap.xml
