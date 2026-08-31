@@ -198,57 +198,97 @@
         }
     </style>
 
-    <!-- Marcado Estructurado Avanzado JSON-LD -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebPage",
-                "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#webpage",
-                "url": "https://snbenito.babalawosnbenito.com/iman-armonia.html",
-                "name": "Brujería Imán Carga Roja y Sometimiento de Armonía | Soporte Satélite",
-                "description": "Exposición técnica de rituales de magnetismo esotérico y doblegación de voluntad para la resolución de conflictos complejos por el Maestro San Benito.",
-                "isPartOf": {
-                    "@id": "https://snbenito.babalawosnbenito.com/#website"
-                },
-                "breadcrumb": {
-                    "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#breadcrumb"
-                }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Inicio",
-                        "item": "https://snbenito.babalawosnbenito.com/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Imán y Armonía Especializada",
-                        "item": "https://snbenito.babalawosnbenito.com/iman-armonia.html"
-                    }
-                ]
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.babalawosanbenito.com/#maestro",
-                "name": "Maestro San Benito",
-                "url": "https://www.babalawosanbenito.com",
-                "knowsAbout": [
-                    "Alta Hechicería",
-                    "Doblega de Voluntades",
-                    "Sometimiento Esotérico",
-                    "Soberanía Existencial"
-                ]
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://logianigromante.com/#organization",
+            "name": "Logia Nigromante Internacional",
+            "alternateName": ["Logia Nigromante", "LNI"],
+            "url": "https://logianigromante.com/",
+            "sameAs": [
+                "https://www.linkedin.com/in/logia-nigromante",
+                "https://www.facebook.com/LogianigromanteOficial"
+            ],
+            "founder": {
+                "@id": "https://logianigromante.com/#founder"
             }
-        ]
-    }
-    </script>
+        },
+        {
+            "@type": "Person",
+            "@id": "https://logianigromante.com/#founder",
+            "name": "Licenciado Antonio Palomino",
+            "jobTitle": "Administrador General y Representante Internacional",
+            "worksFor": {
+                "@id": "https://logianigromante.com/#organization"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
+            "name": "Maestro San Benito",
+            "url": "https://www.babalawosanbenito.com",
+            "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
+            "worksFor": {
+                "@id": "https://logianigromante.com/#organization"
+            },
+            "sameAs": [
+                "https://www.facebook.com/BabalawoBenito",
+                "https://www.linkedin.com/in/babalawosnbenito",
+                "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
+                "https://www.instagram.com/babalawosanbenito/",
+                "https://www.tiktok.com/@babalawosnbenito",
+                "https://x.com/babalawovidente"
+            ],
+            "knowsAbout": [
+                "Alta Hechicería",
+                "Doblega de Voluntades",
+                "Sometimiento Esotérico",
+                "Soberanía Existencial"
+            ]
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#webpage",
+            "url": "https://snbenito.babalawosnbenito.com/iman-armonia.html",
+            "name": "Brujería Imán Carga Roja y Sometimiento de Armonía | Soporte Satélite",
+            "description": "Exposición técnica de rituales de magnetismo esotérico y doblegación de voluntad para la resolución de conflictos complejos por el Maestro San Benito.",
+            "isPartOf": {
+                "@id": "https://snbenito.babalawosnbenito.com/#website"
+            },
+            "breadcrumb": {
+                "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#breadcrumb"
+            },
+            "author": {
+                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
+            },
+            "publisher": {
+                "@id": "https://logianigromante.com/#organization"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://snbenito.babalawosnbenito.com/iman-armonia.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://snbenito.babalawosnbenito.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Imán y Armonía Especializada",
+                    "item": "https://snbenito.babalawosnbenito.com/iman-armonia.html"
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
 <body>
 
