@@ -244,11 +244,59 @@
         }
     </style>
 
-    <!-- Marcado Estructurado Avanzado JSON-LD (Eje Principal de Indexación) -->
+    <!-- MARCADO ESTRUCTURADO JSON-LD: GRAFO MAESTRO ECOSYSTEM UNIFICADO -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://logianigromante.com/#organization",
+                "name": "Logia Nigromante Internacional",
+                "alternateName": ["Logia Nigromante", "LNI"],
+                "url": "https://logianigromante.com/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/logia-nigromante",
+                    "https://www.facebook.com/LogianigromanteOficial"
+                ],
+                "founder": {
+                    "@id": "https://logianigromante.com/#founder"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://logianigromante.com/#founder",
+                "name": "Licenciado Antonio Palomino",
+                "jobTitle": "Administrador General y Representante Internacional",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
+                "name": "Maestro San Benito",
+                "url": "https://babalawosanbenito.com/",
+                "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/BabalawoBenito",
+                    "https://www.linkedin.com/in/babalawosnbenito",
+                    "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
+                    "https://www.instagram.com/babalawosanbenito/",
+                    "https://www.tiktok.com/@babalawosnbenito",
+                    "https://x.com/babalawovidente"
+                ],
+                "knowsAbout": [
+                    "Alta Hechicería",
+                    "Ingeniería de Resultados",
+                    "Blindaje Existencial",
+                    "Soberanía Personal",
+                    "Alquimia Esotérica"
+                ]
+            },
             {
                 "@type": "WebSite",
                 "@id": "https://snbenito.babalawosnbenito.com/#website",
@@ -256,8 +304,9 @@
                 "name": "Maestro San Benito - Red Satélite",
                 "description": "Plataforma de difusión técnica de tratados litúrgicos de alta jerarquía por el Maestro San Benito.",
                 "publisher": {
-                    "@id": "https://www.babalawosanbenito.com/#maestro"
-                }
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "inLanguage": "es-MX"
             },
             {
                 "@type": "WebPage",
@@ -268,22 +317,12 @@
                 "isPartOf": {
                     "@id": "https://snbenito.babalawosnbenito.com/#website"
                 },
-                "about": {
-                    "@id": "https://www.babalawosanbenito.com/#maestro"
+                "author": {
+                    "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
+                },
+                "publisher": {
+                    "@id": "https://logianigromante.com/#organization"
                 }
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.babalawosanbenito.com/#maestro",
-                "name": "Maestro San Benito",
-                "url": "https://www.babalawosanbenito.com",
-                "knowsAbout": [
-                    "Alta Hechicería",
-                    "Ingeniería de Resultados",
-                    "Blindaje Existencial",
-                    "Soberanía Personal",
-                    "Alquimia Esotérica"
-                ]
             }
         ]
     }
