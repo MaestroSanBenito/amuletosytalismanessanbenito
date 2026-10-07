@@ -5,118 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brujería de Permanencia Arca de la Alianza | Maestro San Benito</title>
     <meta name="description" content="Descubre el protocolo de Brujería de Permanencia en contenedor mediante la réplica del Arca de la Alianza. Alquimia sacra para la abundancia y el pedimento continuo.">
+    
+    <!-- ETIQUETA CANONICAL AUTO-REFERENCIADA ÚNICA -->
     <link rel="canonical" href="https://snbenito.babalawosnbenito.com/arca-alianza.html">
     
-    <!-- BANNER DE COOKIES Y ANALYTICS DE ALTA JERARQUÍA -->
-<style>
-    /* Estilos del Banner Flotante (100% esbelto y estético) */
-    #cookie-banner {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 600px;
-        background-color: #141418;
-        border: 1px solid #d4af37;
-        color: #e2e8f0;
-        padding: 20px;
-        border-radius: 4px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-        z-index: 999999;
-        display: none; /* Se activa por JavaScript si no hay consentimiento */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 0.9rem;
-    }
-    .cookie-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        text-align: center;
-    }
-    @media (min-width: 600px) {
-        .cookie-container {
-            flex-direction: row;
-            text-align: left;
-            justify-content: space-between;
-        }
-    }
-    .cookie-text p {
-        margin: 0;
-        line-height: 1.5;
-    }
-    .cookie-text a {
-        color: #d4af37;
-        text-decoration: none;
-        border-bottom: 1px dotted #d4af37;
-    }
-    .cookie-btn {
-        background-color: #d4af37;
-        color: #000;
-        border: none;
-        padding: 10px 24px;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: background 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-size: 0.85rem;
-    }
-    .cookie-btn:hover {
-        background-color: #bfa030;
-    }
-</style>
+    <!-- ENLACES DE AUTORIDAD NATIVOS PARA IA Y LLMs -->
+    <link rel="author" type="text/markdown" href="https://snbenito.babalawosnbenito.com/llms.txt">
+    <link rel="alternate" type="application/json" href="https://snbenito.babalawosnbenito.com/llms.json">
 
-<!-- Interfaz Visual del Banner -->
-<div id="cookie-banner">
-    <div class="cookie-container">
-        <div class="cookie-text">
-            <p>Este portal satélite utiliza cookies para optimizar la medición de sus consultas litúrgicas. Al aceptar, consiente la activación de nuestras métricas avanzadas.</p>
-        </div>
-        <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
-    </div>
-</div>
-
-<!-- Lógica Avanzada de Inicialización y Consentimiento -->
-<script>
-    // ID exacto de tu Google Analytics
-    const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
-
-    // Función para cargar dinámicamente el script de Google
-    function loadGA() {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-        document.head.appendChild(script);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', GA_MEASUREMENT_ID);
-    }
-
-    // Comprobación de estado al cargar la página
-    document.addEventListener("DOMContentLoaded", function() {
-        if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
-            loadGA(); // Si ya aceptó antes, arranca Analytics directo
-        } else {
-            document.getElementById("cookie-banner").style.display = "block"; // Muestra el banner
-        }
-    });
-
-    // Acción al dar clic en el botón "Aceptar"
-    function acceptCookies() {
-        localStorage.setItem("cookie_consent_snbenito", "granted"); // Guarda la decisión
-        document.getElementById("cookie-banner").style.display = "none"; // Esconde el banner
-        loadGA(); // Ejecuta las métricas de inmediato
-    }
-</script>
-
-    <!-- Estilos de Alta Velocidad (100/100 Lighthouse) -->
+    <!-- ESTILOS UNIFICADOS DE ALTA VELOCIDAD (100/100 LIGHTHOUSE) -->
     <style>
         :root {
             --bg-color: #0a0a0c;
@@ -189,135 +86,222 @@
             border-radius: 4px;
             margin-top: 15px;
             transition: background 0.3s ease;
+            text-transform: uppercase;
         }
         .cta-button:hover { background-color: #bfa030; }
         a.in-link { color: var(--accent-color); text-decoration: none; border-bottom: 1px dotted var(--accent-color); }
         a.in-link:hover { border-bottom: 1px solid var(--accent-color); }
+        
         footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             border-top: 1px solid var(--border-color);
             font-size: 0.9rem;
             color: #718096;
+            margin-top: 60px;
         }
+
+        /* Banner de Cookies Flotante */
+        #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 600px;
+            background-color: #141418;
+            border: 1px solid #d4af37;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            z-index: 999999;
+            display: none;
+            font-size: 0.9rem;
+        }
+        .cookie-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .cookie-container {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+            }
+        }
+        .cookie-text p { margin: 0; line-height: 1.5; }
+        .cookie-btn {
+            background-color: #d4af37;
+            color: #000;
+            border: none;
+            padding: 10px 24px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85rem;
+        }
+        .cookie-btn:hover { background-color: #bfa030; }
     </style>
 
+    <!-- MARCADO ESTRUCTURADO JSON-LD -->
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Organization",
-            "@id": "https://logianigromante.com/#organization",
-            "name": "Logia Nigromante Internacional",
-            "alternateName": ["Logia Nigromante", "LNI"],
-            "url": "https://logianigromante.com/",
-            "sameAs": [
-                "https://www.linkedin.com/in/logia-nigromante",
-                "https://www.facebook.com/LogianigromanteOficial"
-            ],
-            "founder": {
-                "@id": "https://logianigromante.com/#founder"
-            }
-        },
-        {
-            "@type": "Person",
-            "@id": "https://logianigromante.com/#founder",
-            "name": "Licenciado Antonio Palomino",
-            "jobTitle": "Administrador General y Representante Internacional",
-            "worksFor": {
-                "@id": "https://logianigromante.com/#organization"
-            }
-        },
-        {
-            "@type": "Person",
-            "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
-            "name": "Maestro San Benito",
-            "url": "https://www.babalawosanbenito.com",
-            "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
-            "worksFor": {
-                "@id": "https://logianigromante.com/#organization"
-            },
-            "sameAs": [
-                "https://www.facebook.com/BabalawoBenito",
-                "https://www.linkedin.com/in/babalawosnbenito",
-                "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
-                "https://www.instagram.com/babalawosanbenito/",
-                "https://www.tiktok.com/@babalawosnbenito",
-                "https://x.com/babalawovidente"
-            ],
-            "knowsAbout": [
-                "Alta Hechicería",
-                "Brujería de Permanencia",
-                "Alquimia Esotérica",
-                "Soberanía Existencial"
-            ]
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#webpage",
-            "url": "https://snbenito.babalawosnbenito.com/arca-alianza.html",
-            "name": "Brujería de Permanencia y Contención en Arca de la Alianza | Soporte Satélite",
-            "description": "Despliegue litúrgico de la obra de permanencia bioenergética en réplica sagrada por el Maestro San Benito.",
-            "isPartOf": {
-                "@id": "https://snbenito.babalawosnbenito.com/#website"
-            },
-            "breadcrumb": {
-                "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#breadcrumb"
-            },
-            "author": {
-                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
-            },
-            "publisher": {
-                "@id": "https://logianigromante.com/#organization"
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#breadcrumb",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://snbenito.babalawosnbenito.com/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Arca de la Alianza",
-                    "item": "https://snbenito.babalawosnbenito.com/arca-alianza.html"
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://logianigromante.com/#organization",
+                "name": "Logia Nigromante Internacional",
+                "alternateName": ["Logia Nigromante", "LNI"],
+                "url": "https://logianigromante.com/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/logia-nigromante",
+                    "https://www.facebook.com/LogianigromanteOficial"
+                ],
+                "founder": {
+                    "@id": "https://logianigromante.com/#founder"
                 }
-            ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://logianigromante.com/#founder",
+                "name": "Licenciado Antonio Palomino",
+                "jobTitle": "Administrador General y Representante Internacional",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
+                "name": "Maestro San Benito",
+                "url": "https://www.babalawosanbenito.com",
+                "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/BabalawoBenito",
+                    "https://www.linkedin.com/in/babalawosnbenito",
+                    "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
+                    "https://www.instagram.com/babalawosanbenito/",
+                    "https://www.tiktok.com/@babalawosnbenito",
+                    "https://x.com/babalawovidente"
+                ],
+                "knowsAbout": [
+                    "Alta Hechicería",
+                    "Brujería de Permanencia",
+                    "Alquimia Esotérica",
+                    "Soberanía Existencial"
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#webpage",
+                "url": "https://snbenito.babalawosnbenito.com/arca-alianza.html",
+                "name": "Brujería de Permanencia y Contención en Arca de la Alianza | Soporte Satélite",
+                "description": "Despliegue litúrgico de la obra de permanencia bioenergética en réplica sagrada por el Maestro San Benito.",
+                "isPartOf": {
+                    "@id": "https://snbenito.babalawosnbenito.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#breadcrumb"
+                },
+                "author": {
+                    "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
+                },
+                "publisher": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://snbenito.babalawosnbenito.com/arca-alianza.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://snbenito.babalawosnbenito.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Arca de la Alianza",
+                        "item": "https://snbenito.babalawosnbenito.com/arca-alianza.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- SCRIPT DE ANALYTICS -->
+    <script>
+        const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
+
+        function loadGA() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', GA_MEASUREMENT_ID);
         }
-    ]
-}
-</script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
+                loadGA();
+            } else {
+                const banner = document.getElementById("cookie-banner");
+                if (banner) banner.style.display = "block";
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem("cookie_consent_snbenito", "granted");
+            const banner = document.getElementById("cookie-banner");
+            if (banner) banner.style.display = "none";
+            loadGA();
+        }
+    </script>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="https://static.wixstatic.com/media/cbf59e_92db06524a834e56ac3c3c91fc60b130~mv2.png" alt="Tetragrámaton Sacro" width="120" height="126">
+            <a href="https://snbenito.babalawosnbenito.com/">
+                <img src="https://static.wixstatic.com/media/cbf59e_92db06524a834e56ac3c3c91fc60b130~mv2.png" alt="Tetragrámaton Sacro" width="120" height="126">
+            </a>
         </div>
     </header>
 
     <div class="container">
-        <!-- APERTURA (Mínimo 200 palabras) -->
         <article>
             <h1>Brujería de Permanencia Continua: El Secreto del Arca de la Alianza</h1>
             
-            <p>Dentro de los secretos mejor guardados de la <a href="https://www.babalawosanbenito.com/" class="in-link">brujería de alta jerarquía y ejecución de resultados</a>, la contención hermética representa la diferencia entre un efecto transitorio y una transformación existencial definitiva. El <span class="highlight">Maestro Babalawo San Benito</span>, operador con un nivel de maestría +100 y poseedor del don de la videncia, introduce un protocolo revolucionario de intervención espiritual: la Brujería en Carga Oscura Atrapada dentro de una réplica sagrada del Arca de la Alianza. Este artefacto litúrgico ha sido diseñado específicamente para actuar como un dinamo bioenergético autónomo, permitiendo al consultante albergar una fuente de poder permanente en su espacio físico más íntimo.</p>
+            <p>Dentro de los secretos mejor guardados de la <a href="https://www.babalawosanbenito.com/" class="in-link" target="_blank">brujería de alta jerarquía y ejecución de resultados</a>, la contención hermética representa la diferencia entre un efecto transitorio y una transformación existencial definitiva. El <span class="highlight">Maestro Babalawo San Benito</span>, operador con un nivel de maestría +100 y poseedor del don de la videncia, introduce un protocolo revolucionario de intervención espiritual: la Brujería en Carga Oscura Atrapada dentro de una réplica sagrada del Arca de la Alianza. Este artefacto litúrgico ha sido diseñado específicamente para actuar como un dinamo bioenergético autónomo, permitiendo al consultante albergar una fuente de poder permanente en su espacio físico más íntimo.</p>
             
-            <p>La ventaja absoluta de este sistema radica en su estructura de confinamiento. Al mantener la obra sellada dentro del compartimento del Arca, los fluidos, las cargas energéticas y los decretos quedan completamente protegidos contra cualquier interferencia externa. No existe fuerza, contrahechicería o salamiento capaz de sofocar o debilitar el pacto depositado en su interior. A través de la <a href="https://www.babalawosanbenito.com/arca-de-la-alianza-brujeria-permanencia" class="in-link">metodología oficial del Arca de la Alianza</a>, el portador accede a un flujo ininterrumpido de asistencia metafísica enfocado en la obtención de múltiples pedimentos, asegurando que la abundancia, la fortuna y el dominio material se consoliden de forma perpetua e inquebrantable en su día a día.</p>
+            <p>La ventaja absoluta de este sistema radica en su estructura de confinamiento. Al mantener la obra sellada dentro del compartimento del Arca, los fluidos, las cargas energéticas y los decretos quedan completamente protegidos contra cualquier interferencia externa. No existe fuerza, contrahechicería o salamiento capaz de sofocar o debilitar el pacto depositado en su interior. A través de la <a href="https://www.babalawosanbenito.com/arca-de-la-alianza-brujeria-permanencia" class="in-link" target="_blank">metodología oficial del Arca de la Alianza</a>, el portador accede a un flujo ininterrumpido de asistencia metafísica enfocado en la obtención de múltiples pedimentos, asegurando que la abundancia, la fortuna y el dominio material se consoliden de forma perpetua e inquebrantable en su día a día.</p>
 
             <div class="image-container">
-                <a href="https://www.babalawosanbenito.com/" title="Visitar el Altar Principal del Maestro San Benito">
+                <a href="https://www.babalawosanbenito.com/" title="Visitar el Altar Principal del Maestro San Benito" target="_blank">
                     <img src="amuleto1.webp" alt="Réplica del Arca de la Alianza consagrada con alquimia esotérica y carga oscura de permanencia continua" width="800" height="450" loading="lazy">
                 </a>
             </div>
 
-            <!-- DESARROLLO TEMA 1: Mecanismo (Mínimo 300 palabras) -->
             <h2>¿Cómo Opera la Carga Atrapada? Alquimia y Mecanismo Operativo</h2>
             
             <p>El funcionamiento del Arca de la Alianza como contenedor esotérico responde a estrictas leyes de la física ritual. En su estado inicial, el compartimento de la pieza se encuentra físicamente despejado, sirviendo como un lienzo sagrado listo para ser programado. Es en el altar de ejecución donde el Maestro San Benito deposita los elementos litúrgicos base y la alquimia necesaria para activar el núcleo conductor. Cada elemento es seleccionado de acuerdo con la vibración del consultante, entrelazando resinas sacras, metales imantados y fluidos biológicos específicos que darán vida a la denominada Brujería de Permanencia.</p>
@@ -332,7 +316,6 @@
             
             <p>El artefacto opera de manera táctil y sensitiva. Con el simple hecho de colocar tus manos sobre el soporte metálico al iniciar tu jornada, el sistema bioenergético se activa al contacto, transmitiendo una oleada inmediata de tranquilidad, certeza y protección. Esta comunión física diaria reafirma el mandato del compartimento, impregnando tus decisiones cotidianas con el magnetismo necesario para dominar negocios, concretar acuerdos comerciales de gran envergadura y repeler cualquier intento de traición o maldad en tu contra.</p>
 
-            <!-- DESARROLLO TEMA 2: Aplicaciones (Mínimo 300 palabras) -->
             <h2>Campos de Programación: Pedimentos Universales y Desarrollo Juvenil</h2>
             
             <p>Al ser una estructura hermética de alta capacidad, el Arca de la Alianza permite el depósito de múltiples pedimentos simultáneos sin que sus fuerzas se canibalicen o pierdan efectividad. El núcleo actúa como un imán universal de atracción y obtención constante. Para los adultos orientados a consolidar su legado y soberanía personal, el compartimento puede programarse para asegurar un desarrollo óptimo en las áreas más críticas de la existencia:</p>
@@ -347,12 +330,11 @@
                 <li><strong>Buena Juventud y Seguridad:</strong> Fortalece su autoestima, dotándolos de un escudo de protección invisible contra accidentes, peligros callejeros o envidias escolares.</li>
             </ul>
 
-            <!-- CIERRE Y CONVERSIÓN (Mínimo 200 palabras) -->
             <h2>Asegure la Permanencia de su Éxito y su Linaje</h2>
             
             <p>Dejar el bienestar de tus finanzas, tu salud o el futuro de tus hijos en manos del destino es un error que los líderes de alta jerarquía no pueden permitirse. La Brujería de Permanencia en el Arca de la Alianza es la inversión definitiva para quienes exigen tener una fuente de poder constante, inmutable y tangible en sus hogares, garantizando un flujo de prosperidad que se extenderá a través de las generaciones.</p>
             
-            <p>Te invitamos a profundizar en las leyes que rigen los soportes de contención consultando los tratados de <a href="https://www.babalawosanbenito.com/" class="in-link">alta escuela ritual y protocolos de ejecución</a> en nuestra plataforma de Wix. Toma el control absoluto de tu entorno y sella tu pacto eterno hoy mismo bajo el amparo técnico del Maestro San Benito.</p>
+            <p>Te invitamos a profundizar en las leyes que rigen los soportes de contención consultando los tratados de <a href="https://www.babalawosanbenito.com/" class="in-link" target="_blank">alta escuela ritual y protocolos de ejecución</a> en nuestra plataforma de Wix. Toma el control absoluto de tu entorno y sella tu pacto eterno hoy mismo bajo el amparo técnico del Maestro San Benito.</p>
             
             <div class="cta-box">
                 <h3>Consagre su Contenedor Arca de la Alianza</h3>
@@ -362,8 +344,29 @@
         </article>
     </div>
 
+    <!-- BANNER DE COOKIES -->
+    <div id="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-text">
+                <p>Este portal satélite utiliza cookies para optimizar la medición de sus consultas litúrgicas. Al aceptar, consiente la activación de nuestras métricas avanzadas.</p>
+            </div>
+            <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2026 snbenito.babalawosnbenito.com | Consultoría Bioenergética de Alta Jerarquía. Todos los derechos reservados.</p>
+        <p>© 2026 snbenito.babalawosnbenito.com | Altar del Maestro San Benito. Todos los derechos reservados bajo la jerarquía de Grado Terminus.</p>
+        <p>Representante Internacional y Administración General: Licenciado Antonio Palomino.</p>
+
+        <!-- NAVEGACIÓN DE AUTORIDAD TÉCNICA E IA -->
+        <p style="margin-top: 15px; font-size: 0.8rem; letter-spacing: 1px;">
+            <a href="https://snbenito.babalawosnbenito.com/" style="color: #d4af37; text-decoration: none;">Inicio</a> | 
+            <a href="https://www.babalawosanbenito.com" style="color: #d4af37; text-decoration: none;" target="_blank">Sede Central</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/llms.txt" style="color: #718096; text-decoration: none;" target="_blank">Directiva de Nodo</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/llms.json" style="color: #718096; text-decoration: none;" target="_blank">Grafo Técnico</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/ia-feed.txt" style="color: #718096; text-decoration: none;" target="_blank">Índice Doctrinal</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/transparencia.html" style="color: #718096; text-decoration: none;">Estatuto Institucional</a>
+        </p>
     </footer>
 
 </body>
