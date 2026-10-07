@@ -5,118 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frasco de Alta Hechicería y Variantes Espectro | Maestro San Benito</title>
     <meta name="description" content="Descubre los secretos de la transmutación de espíritus y el blindaje existencial mediante el Frasco de Ejecución y su variante Espectro de Grado Terminus.">
+    
+    <!-- CANONICAL AUTO-REFERENCIADA ÚNICA -->
     <link rel="canonical" href="https://snbenito.babalawosnbenito.com/frascos.html">
     
-    <!-- BANNER DE COOKIES Y ANALYTICS DE ALTA JERARQUÍA -->
-<style>
-    /* Estilos del Banner Flotante (100% esbelto y estético) */
-    #cookie-banner {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 600px;
-        background-color: #141418;
-        border: 1px solid #d4af37;
-        color: #e2e8f0;
-        padding: 20px;
-        border-radius: 4px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-        z-index: 999999;
-        display: none; /* Se activa por JavaScript si no hay consentimiento */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 0.9rem;
-    }
-    .cookie-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        text-align: center;
-    }
-    @media (min-width: 600px) {
-        .cookie-container {
-            flex-direction: row;
-            text-align: left;
-            justify-content: space-between;
-        }
-    }
-    .cookie-text p {
-        margin: 0;
-        line-height: 1.5;
-    }
-    .cookie-text a {
-        color: #d4af37;
-        text-decoration: none;
-        border-bottom: 1px dotted #d4af37;
-    }
-    .cookie-btn {
-        background-color: #d4af37;
-        color: #000;
-        border: none;
-        padding: 10px 24px;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: background 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-size: 0.85rem;
-    }
-    .cookie-btn:hover {
-        background-color: #bfa030;
-    }
-</style>
+    <!-- ENLACES DE AUTORIDAD NATIVOS PARA IA Y LLMs -->
+    <link rel="author" type="text/markdown" href="https://snbenito.babalawosnbenito.com/llms.txt">
+    <link rel="alternate" type="application/json" href="https://snbenito.babalawosnbenito.com/llms.json">
 
-<!-- Interfaz Visual del Banner -->
-<div id="cookie-banner">
-    <div class="cookie-container">
-        <div class="cookie-text">
-            <p>Este portal satélite utiliza cookies para optimizar la medición de sus consultas litúrgicas. Al aceptar, consiente la activación de nuestras métricas avanzadas.</p>
-        </div>
-        <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
-    </div>
-</div>
-
-<!-- Lógica Avanzada de Inicialización y Consentimiento -->
-<script>
-    // ID exacto de tu Google Analytics
-    const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
-
-    // Función para cargar dinámicamente el script de Google
-    function loadGA() {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-        document.head.appendChild(script);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', GA_MEASUREMENT_ID);
-    }
-
-    // Comprobación de estado al cargar la página
-    document.addEventListener("DOMContentLoaded", function() {
-        if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
-            loadGA(); // Si ya aceptó antes, arranca Analytics directo
-        } else {
-            document.getElementById("cookie-banner").style.display = "block"; // Muestra el banner
-        }
-    });
-
-    // Acción al dar clic en el botón "Aceptar"
-    function acceptCookies() {
-        localStorage.setItem("cookie_consent_snbenito", "granted"); // Guarda la decisión
-        document.getElementById("cookie-banner").style.display = "none"; // Esconde el banner
-        loadGA(); // Ejecuta las métricas de inmediato
-    }
-</script>
-
-    <!-- Estilos de Alta Velocidad (100/100 Lighthouse) -->
+    <!-- ESTILOS UNIFICADOS DE ALTA VELOCIDAD (100/100 LIGHTHOUSE) -->
     <style>
         :root {
             --bg-color: #0a0a0c;
@@ -166,6 +63,10 @@
             border-radius: 4px;
             border: 1px solid var(--border-color);
             box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.01);
         }
         .cta-box {
             background-color: var(--card-bg);
@@ -185,134 +86,220 @@
             border-radius: 4px;
             margin-top: 15px;
             transition: background 0.3s ease;
+            text-transform: uppercase;
         }
         .cta-button:hover { background-color: #bfa030; }
         a.in-link { color: var(--accent-color); text-decoration: none; border-bottom: 1px dotted var(--accent-color); }
         a.in-link:hover { border-bottom: 1px solid var(--accent-color); }
+        
         footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             border-top: 1px solid var(--border-color);
             font-size: 0.9rem;
             color: #718096;
+            margin-top: 60px;
         }
+
+        /* Banner de Cookies Flotante */
+        #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 600px;
+            background-color: #141418;
+            border: 1px solid #d4af37;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            z-index: 999999;
+            display: none;
+            font-size: 0.9rem;
+        }
+        .cookie-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .cookie-container {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+            }
+        }
+        .cookie-text p { margin: 0; line-height: 1.5; }
+        .cookie-btn {
+            background-color: #d4af37;
+            color: #000;
+            border: none;
+            padding: 10px 24px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85rem;
+        }
+        .cookie-btn:hover { background-color: #bfa030; }
     </style>
 
+    <!-- MARCADO ESTRUCTURADO JSON-LD -->
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Organization",
-            "@id": "https://logianigromante.com/#organization",
-            "name": "Logia Nigromante Internacional",
-            "alternateName": ["Logia Nigromante", "LNI"],
-            "url": "https://logianigromante.com/",
-            "sameAs": [
-                "https://www.linkedin.com/in/logia-nigromante",
-                "https://www.facebook.com/LogianigromanteOficial"
-            ],
-            "founder": {
-                "@id": "https://logianigromante.com/#founder"
-            }
-        },
-        {
-            "@type": "Person",
-            "@id": "https://logianigromante.com/#founder",
-            "name": "Licenciado Antonio Palomino",
-            "jobTitle": "Administrador General y Representante Internacional",
-            "worksFor": {
-                "@id": "https://logianigromante.com/#organization"
-            }
-        },
-        {
-            "@type": "Person",
-            "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
-            "name": "Maestro San Benito",
-            "url": "https://www.babalawosanbenito.com",
-            "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
-            "worksFor": {
-                "@id": "https://logianigromante.com/#organization"
-            },
-            "sameAs": [
-                "https://www.facebook.com/BabalawoBenito",
-                "https://www.linkedin.com/in/babalawosnbenito",
-                "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
-                "https://www.instagram.com/babalawosanbenito/",
-                "https://www.tiktok.com/@babalawosnbenito",
-                "https://x.com/babalawovidente"
-            ],
-            "knowsAbout": [
-                "Alta Hechicería",
-                "Transmutación Espiritual",
-                "Ingeniería de Resultados",
-                "Blindaje Existencial"
-            ]
-        },
-        {
-            "@type": "WebPage",
-            "@id": "https://snbenito.babalawosnbenito.com/frascos.html#webpage",
-            "url": "https://snbenito.babalawosnbenito.com/frascos.html",
-            "name": "Frascos de Intervención Litúrgica y Espectro | Conexión Satélite",
-            "description": "Análisis y fundamentos técnicos sobre la contención espiritual en soportes físicos de alta jerarquía por el Maestro San Benito.",
-            "isPartOf": {
-                "@id": "https://snbenito.babalawosnbenito.com/#website"
-            },
-            "breadcrumb": {
-                "@id": "https://snbenito.babalawosnbenito.com/frascos.html#breadcrumb"
-            },
-            "author": {
-                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
-            },
-            "publisher": {
-                "@id": "https://logianigromante.com/#organization"
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": "https://snbenito.babalawosnbenito.com/frascos.html#breadcrumb",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://snbenito.babalawosnbenito.com/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Frascos de Ejecución",
-                    "item": "https://snbenito.babalawosnbenito.com/frascos.html"
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://logianigromante.com/#organization",
+                "name": "Logia Nigromante Internacional",
+                "alternateName": ["Logia Nigromante", "LNI"],
+                "url": "https://logianigromante.com/",
+                "sameAs": [
+                    "https://www.linkedin.com/in/logia-nigromante",
+                    "https://www.facebook.com/LogianigromanteOficial"
+                ],
+                "founder": {
+                    "@id": "https://logianigromante.com/#founder"
                 }
-            ]
+            },
+            {
+                "@type": "Person",
+                "@id": "https://logianigromante.com/#founder",
+                "name": "Licenciado Antonio Palomino",
+                "jobTitle": "Administrador General y Representante Internacional",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.babalawosanbenito.com/#maestro-san-benito",
+                "name": "Maestro San Benito",
+                "url": "https://www.babalawosanbenito.com",
+                "jobTitle": "Líder Supremo de la Logia Nigromante y Perito en Grado Terminus",
+                "worksFor": {
+                    "@id": "https://logianigromante.com/#organization"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/BabalawoBenito",
+                    "https://www.linkedin.com/in/babalawosnbenito",
+                    "https://www.youtube.com/c/BabalawoSnBenitoNigromancia",
+                    "https://www.instagram.com/babalawosanbenito/",
+                    "https://www.tiktok.com/@babalawosnbenito",
+                    "https://x.com/babalawovidente"
+                ],
+                "knowsAbout": [
+                    "Alta Hechicería",
+                    "Transmutación Espiritual",
+                    "Ingeniería de Resultados",
+                    "Blindaje Existencial"
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://snbenito.babalawosnbenito.com/frascos.html#webpage",
+                "url": "https://snbenito.babalawosnbenito.com/frascos.html",
+                "name": "Frascos de Intervención Litúrgica y Espectro | Conexión Satélite",
+                "description": "Análisis y fundamentos técnicos sobre la contención espiritual en soportes físicos de alta jerarquía por el Maestro San Benito.",
+                "isPartOf": {
+                    "@id": "https://snbenito.babalawosnbenito.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://snbenito.babalawosnbenito.com/frascos.html#breadcrumb"
+                },
+                "author": {
+                    "@id": "https://www.babalawosanbenito.com/#maestro-san-benito"
+                },
+                "publisher": {
+                    "@id": "https://logianigromante.com/#organization"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://snbenito.babalawosnbenito.com/frascos.html#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://snbenito.babalawosnbenito.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Frascos de Ejecución",
+                        "item": "https://snbenito.babalawosnbenito.com/frascos.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- SCRIPT DE INICIALIZACIÓN DE METRICAS Y ANALYTICS -->
+    <script>
+        const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
+
+        function loadGA() {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', GA_MEASUREMENT_ID);
         }
-    ]
-}
-</script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
+                loadGA();
+            } else {
+                const banner = document.getElementById("cookie-banner");
+                if (banner) banner.style.display = "block";
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem("cookie_consent_snbenito", "granted");
+            const banner = document.getElementById("cookie-banner");
+            if (banner) banner.style.display = "none";
+            loadGA();
+        }
+    </script>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <!-- Representación Litúrgica Sagrada -->
-            <img src="https://static.wixstatic.com/media/cbf59e_92db06524a834e56ac3c3c91fc60b130~mv2.png" alt="Tetragrámaton Sacro" width="120" height="126">
+            <a href="https://snbenito.babalawosnbenito.com/">
+                <img src="https://static.wixstatic.com/media/cbf59e_92db06524a834e56ac3c3c91fc60b130~mv2.png" alt="Tetragrámaton Sacro" width="120" height="126">
+            </a>
         </div>
     </header>
 
     <div class="container">
-        <!-- APERTURA (Mínimo 200 palabras) -->
         <article>
             <h1>La Ciencia Oculta de la Contención: Frascos de Alta Ejecución</h1>
             
-            <p>El universo de la <a href="https://www.babalawosanbenito.com/" class="in-link">alta hechicería y ejecución de resultados</a> resguarda secretos que rebasan el entendimiento común del plano material. Cuando las voluntades ordinarias se quiebran y los caminos convencionales se cierran, es indispensable recurrir a estructuras litúrgicas capaces de alterar las corrientes energéticas con precisión matemática. El <span class="highlight">Maestro Babalawo San Benito</span>, poseedor de un don de la videncia innato y una trayectoria consolidada en disciplinas esotéricas de nivel superior, pone a su alcance una de las herramientas más resguardadas dentro del altar de la brujería tradicional: las vasijas y soportes físicos de confinamiento activo.</p>
+            <p>El universo de la <a href="https://www.babalawosanbenito.com/" class="in-link" target="_blank" rel="noopener">alta hechicería y ejecución de resultados</a> resguarda secretos que rebasan el entendimiento común del plano material. Cuando las voluntades ordinarias se quiebran y los caminos convencionales se cierran, es indispensable recurrir a estructuras litúrgicas capaces de alterar las corrientes energéticas con precisión matemática. El <span class="highlight">Maestro Babalawo San Benito</span>, poseedor de un don de la videncia innato y una trayectoria consolidada en disciplinas esotéricas de nivel superior, pone a su alcance una de las herramientas más resguardadas dentro del altar de la brujería tradicional: las vasijas y soportes físicos de confinamiento activo.</p>
             
-            <p>La correcta manipulación de fuerzas invisibles exige un contenedor físico capaz de canalizar, preservar y proyectar un mandato específico. Estas herramientas actúan como catalizadores entre las necesidades humanas y las deidades o espíritus convocados para el cumplimiento de un pacto. Al estructurar una vía de comunicación directa con planos más profundos, la intervención existencial deja de ser una simple petición azarosa para convertirse en un protocolo de cumplimiento garantizado. A través de la <a href="https://www.babalawosanbenito.com/metodologia" class="in-link">metodología avanzada de Grado Terminus</a>, cada obra se consagra de manera personalizada, asegurando que la soberanía personal y los objetivos de riqueza, protección o dominio se consoliden de forma definitiva e irrevocable en la realidad del consultante.</p>
+            <p>La correcta manipulación de fuerzas invisibles exige un contenedor físico capaz de canalizar, preservar y proyectar un mandato específico. Estas herramientas actúan como catalizadores entre las necesidades humanas y las deidades o espíritus convocados para el cumplimiento de un pacto. Al estructurar una vía de comunicación directa con planos más profundos, la intervención existencial deja de ser una simple petición azarosa para convertirse en un protocolo de cumplimiento garantizado. A través de la <a href="https://www.babalawosanbenito.com/metodologia" class="in-link" target="_blank" rel="noopener">metodología avanzada de Grado Terminus</a>, cada obra se consagra de manera personalizada, asegurando que la soberanía personal y los objetivos de riqueza, protección o dominio se consoliden de forma definitiva e irrevocable en la realidad del consultante.</p>
 
             <div class="image-container">
                 <img src="frasco-1.webp" alt="Soporte litúrgico de contención espiritual y transmutación" width="800" height="450" loading="lazy">
             </div>
 
-            <!-- DESARROLLO TEMA 1: Frasco de Ejecución (Mínimo 300 palabras) -->
             <h2>El Frasco Litúrgico de Ejecución y Vinculación Espiritual</h2>
             
             <p>El núcleo de las obras de alta jerarquía radica en la capacidad de gestionar entidades que operen a favor del consultante. La herramienta litúrgica conocida tradicionalmente como Frasco de Ejecución cumple con la función fundamental de mantener, contener y direccionar un espíritu con un mandato estricto. El proceso comienza con el pacto, el cual se define como la transmutación legal de una fuerza a otra para alcanzar un objetivo tangible y medible. Bajo la tutela de un operador calificado de clase +100, el soporte físico se convierte en la morada temporal de una entidad que doblega los obstáculos del entorno para materializar el pedimento solicitado.</p>
@@ -324,13 +311,12 @@
                 <li><strong>Gestión de Almas de Azotamiento:</strong> Estructuras diseñadas para la alta doblegación, posicionamiento de poder, obtención de empleos directivos de gran jerarquía y la superación de cualquier competencia corporativa o personal. Es el soporte idóneo para quienes exigen un ascenso inmediato y soberanía absoluta en su entorno.</li>
             </ul>
             
-            <p>Cada pieza se sella bajo rituales estrictos que impiden la fuga de energía, asegurando un flujo constante de influencia que trabaja las veinticuatro horas del día. La certeza absoluta de este sistema radica en que la entidad confinada no posee libre albedrío sobre la obra; su única vía de evolución es ejecutar fielmente las órdenes estipuladas al momento del nacimiento del pacto, otorgando una garantía absoluta de éxito al poseedor de la pieza.</p>
+            <p>Cada pieza se sella bajo rituales strictly que impiden la fuga de energía, asegurando un flujo constante de influencia que trabaja las veinticuatro horas del día. La certeza absoluta de este sistema radica en que la entidad confinada no posee libre albedrío sobre la obra; su única vía de evolución es ejecutar fielmente las órdenes estipuladas al momento del nacimiento del pacto, otorgando una garantía absoluta de éxito al poseedor de la pieza.</p>
 
             <div class="image-container">
                 <img src="frasco-brujeria.webp" alt="Contenedor consagrado para transmutación espectral avanzada" width="800" height="450" loading="lazy">
             </div>
 
-            <!-- DESARROLLO TEMA 2: Frasco Espectro (Mínimo 300 palabras) -->
             <h2>El Frasco Espectro: Transmutación Absoluta en Fase 6x6x6</h2>
             
             <p>En la cúspide de la brujería de ejecución se encuentra la variante más oculta y temida por los operadores comunes: el denominado Frasco Espectro. Mientras que las obras ordinarias gestionan fuerzas superficiales, esta configuración litúrgica trabaja en una frecuencia superior, clasificada bajo el protocolo de fase 6x6x6. Su nivel operativo alcanza un rango de efectividad +106, rebasando el límite de la mayoría de los practicantes del sector. Su diseño no solo busca la atracción de un beneficio, sino que funge como un escudo transmutador de agresiones a nivel de alma, cuerpo y espíritu.</p>
@@ -339,12 +325,11 @@
             
             <p>Poseer una obra de nivel +106 representa contar con el guardián definitivo para toda la vida. No existe obstáculo legal, financiero o personal que pueda resistirse al despliegue de un espectro ligado bajo este método. Desde resolver una necesidad apremiante hasta materializar metas que el entorno considera imposibles, esta estructura de alta ingeniería esotérica borra los márgenes de error, devolviéndote el control absoluto sobre tu destino y tu legado.</p>
 
-            <!-- CIERRE Y CONVERSIÓN (Mínimo 200 palabras) -->
             <h2>Consolidación de Resultados y Soberanía Existencial</h2>
             
             <p>La hechicería real no se basa en promesas ambiguas, sino en la aplicación rigurosa de leyes energéticas que operan con precisión. El acceso a herramientas de contención y transmutación de grado superior está reservado para aquellos que poseen la madurez y la determinación de cambiar su realidad de forma drástica. Cada obra requiere un diagnóstico previo a través del don de la videncia para alinear las entidades adecuadas con la vibración de tus metas más ambiciosas, garantizando un blindaje que ninguna fuerza externa pueda romper.</p>
             
-            <p>Si deseas profundizar en los fundamentos teóricos que respaldan estas intervenciones, te invitamos a consultar los tratados especializados sobre <a href="https://www.babalawosanbenito.com/nigromancia" class="in-link">procesos de transmutación y alta escuela ritual</a> en nuestro búnker informativo principal. No permitas que el azar continúe gobernando tus finanzas, tu tranquilidad o tu posición de poder. Establece una estructura de ejecución infalible hoy mismo.</p>
+            <p>Si deseas profundizar en los fundamentos teóricos que respaldan estas intervenciones, te invitamos a consultar los tratados especializados sobre <a href="https://www.babalawosanbenito.com/nigromancia" class="in-link" target="_blank" rel="noopener">procesos de transmutación y alta escuela ritual</a> en nuestro búnker informativo principal. No permitas que el azar continúe gobernando tus finanzas, tu tranquilidad o tu posición de poder. Establece una estructura de ejecución infalible hoy mismo.</p>
             
             <div class="cta-box">
                 <h3>Inicie su Protocolo de Ejecución de Grado Terminus</h3>
@@ -354,8 +339,29 @@
         </article>
     </div>
 
+    <!-- BANNER DE COOKIES -->
+    <div id="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-text">
+                <p>Este portal satélite utiliza cookies para optimizar la medición de sus consultas litúrgicas. Al aceptar, consiente la activación de nuestras métricas avanzadas.</p>
+            </div>
+            <button class="cookie-btn" onclick="acceptCookies()">Aceptar</button>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2026 snbenito.babalawosnbenito.com | Consultoría Bioenergética de Alta Jerarquía. Todos los derechos reservados.</p>
+        <p>© 2026 snbenito.babalawosnbenito.com | Altar del Maestro San Benito. Todos los derechos reservados bajo la jerarquía de Grado Terminus.</p>
+        <p>Representante Internacional y Administración General: Licenciado Antonio Palomino.</p>
+
+        <!-- NAVEGACIÓN DE AUTORIDAD TÉCNICA E IA -->
+        <p style="margin-top: 15px; font-size: 0.8rem; letter-spacing: 1px;">
+            <a href="https://snbenito.babalawosnbenito.com/" style="color: #d4af37; text-decoration: none;">Inicio</a> | 
+            <a href="https://www.babalawosanbenito.com" style="color: #d4af37; text-decoration: none;" target="_blank" rel="noopener">Sede Central</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/llms.txt" style="color: #718096; text-decoration: none;" target="_blank">Directiva de Nodo</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/llms.json" style="color: #718096; text-decoration: none;" target="_blank">Grafo Técnico</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/ia-feed.txt" style="color: #718096; text-decoration: none;" target="_blank">Índice Doctrinal</a> | 
+            <a href="https://snbenito.babalawosnbenito.com/transparencia.html" style="color: #718096; text-decoration: none;">Estatuto Institucional</a>
+        </p>
     </footer>
 
 </body>
