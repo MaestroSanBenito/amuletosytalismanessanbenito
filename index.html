@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoría Bioenergética de Alta Jerarquía | Maestro San Benito</title>
     <meta name="description" content="Portal oficial satélite del Maestro San Benito, Nivel +100. Especialista en ingeniería de resultados, blindaje de legado y soberanía existencial de Grado Terminus.">
-
+    
     <link rel="canonical" href="https://snbenito.babalawosnbenito.com/">
 
     <link rel="author" type="text/markdown" href="llms.txt">
@@ -108,8 +108,7 @@
         h1 { font-size: 2.3rem; text-align: center; margin-bottom: 10px; }
         h2 { font-size: 1.7rem; text-align: center; margin-top: 50px; margin-bottom: 30px; }
         p { margin-bottom: 20px; text-align: justify; }
-        .highlight { color: var(--accent-color); font-weight: bold; }
-
+        
         .grid-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -117,40 +116,33 @@
             margin-top: 30px;
         }
 
-        a.card {
+        .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             padding: 25px;
             border-radius: 4px;
-            text-decoration: none !important;
-            color: var(--text-color) !important;
+            text-decoration: none;
+            color: var(--text-color);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             box-sizing: border-box;
-            cursor: pointer;
-            position: relative;
-            z-index: 1;
             transition: border-color 0.2s ease, background-color 0.2s ease;
         }
 
-        a.card:hover {
+        .card:hover {
             border-color: var(--accent-color);
             background-color: #1a1a20;
         }
 
-        a.card * {
-            pointer-events: none;
-        }
-
-        a.card h3 {
+        .card h3 {
             margin-top: 0;
             font-size: 1.25rem;
             margin-bottom: 10px;
             color: var(--accent-color);
         }
 
-        a.card p {
+        .card p {
             font-size: 0.95rem;
             color: #a0aec0;
             margin-bottom: 15px;
@@ -158,7 +150,7 @@
             line-height: 1.5;
         }
 
-        a.card .card-link {
+        .card .card-link {
             color: var(--accent-color);
             font-weight: bold;
             font-size: 0.85rem;
@@ -252,12 +244,12 @@
     </style>
 
     <script>
-        const GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
+        var GA_MEASUREMENT_ID = 'G-TB1LVXG33E';
 
         function loadGA() {
-            const script = document.createElement('script');
+            var script = document.createElement('script');
             script.async = true;
-            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
             document.head.appendChild(script);
 
             window.dataLayer = window.dataLayer || [];
@@ -271,14 +263,14 @@
             if (localStorage.getItem("cookie_consent_snbenito") === "granted") {
                 loadGA();
             } else {
-                const banner = document.getElementById("cookie-banner");
+                var banner = document.getElementById("cookie-banner");
                 if (banner) banner.style.display = "block";
             }
         });
 
         function acceptCookies() {
             localStorage.setItem("cookie_consent_snbenito", "granted");
-            const banner = document.getElementById("cookie-banner");
+            var banner = document.getElementById("cookie-banner");
             if (banner) banner.style.display = "none";
             loadGA();
         }
